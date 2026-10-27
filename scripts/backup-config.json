@@ -1,0 +1,11 @@
+{
+    "StorageUrl": "https://uefastrg01.file.core.windows.net",
+    "Destination": "\\\\uefafiler01\\FFP-Board-Backup",
+    "BackupDays": [1, 16],
+    "DirectoryRegex": "^(?<datetime>\\d+-\\d+-\\d+\\s\\d+-\\d+-\\d+-\\d+)\\W+\\w+(?<type>(LD|CLFFP|QA))\\.hbmp$",
+    "SyncTimeoutSeconds": 18000,
+    "BackupPaths": [
+        { "name": "uefa-c1", "path": "bss/backup/uefa-c1", "types": ["LD", "CLFFP", "QA"] },
+        { "name": "uefa-s1", "path": "bss/backup/uefa-s1", "types": ["LD", "CLFFP"] }
+    ]
+}
